@@ -1,8 +1,7 @@
 body{
     margin: 0;
+    overflow-x: hidden;
 }
-
-
 .header{
     display: flex;
     flex-direction: row;
@@ -54,3 +53,88 @@ nav ul li a{
 nav ul li a:hover{
     color: green;
 }
+
+.article{
+    width: 100%;
+    /* height: 450px; */
+    /* border: 1px solid black; */
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.article-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+
+    padding: 15px;
+}
+
+.article-info i{
+    font-family: 'Gill Sans', sans-serif;
+    color: white;
+    font-size: 25px;
+
+}
+.imagem-evento{
+    width: 100%; 
+    height: 550px; 
+   
+}
+
+.eventos{
+    width: 100%;
+
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.evento1{
+    width: 400px;
+    height: 400px;
+
+    margin: 0px 40px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.evento1-descricao{
+    height: 25%;
+
+}
+
+.evento1-img{
+    height: 74%;
+
+}
+
+
+.contato-container{
+
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.form-container{
+
+    width: 550px;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+    .eventos {
+        flex-direction: column;
+    }
+  }
